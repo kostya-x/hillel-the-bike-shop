@@ -170,13 +170,15 @@
 .category {
   margin: 15px;
   width: 348px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 288px;
   position: relative;
   display: flex;
-  flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -247,10 +249,4 @@
 
 .category:hover .category__link-button {
   display: block;
-}
-
-@media screen and (max-width: 767px) {
-  .slider {
-    flex-shrink: 0.5;
-  }
 }
