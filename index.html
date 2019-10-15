@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Bike Shop</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+<header class="header">
+  <div class="slider">
+    <div class="slider__content">
+      <h1 class="slider__title">HANDMADE BICYCLE</h2>
+      <p class="slider__text">You <span class="slider__text--brand-color">create</span> the <span class="slider__text--brand-color">journey</span>, we supply the <span class="slider__text--brand-color">parts</span></p>
+      <a class="slider__link-button" href="#">SHOP BIKES</a>
+    </div>
+    <button class="slider__button slider__button--left">
+      <svg class="slider__button-svg slider__button-svg--rotate" xmlns="http://www.w3.org/2000/svg" width="60" height="60"><path stroke="currentColor" stroke-width="2" fill="none" d="M49 59H11A10 10 0 011 49V11A10 10 0 0111 1h38a10 10 0 0110 10v38a10 10 0 01-10 10zM36 27.5L27.8 19a3.3 3.3 0 00-4.8 0 3.6 3.6 0 000 5l5.9 6-5.9 6a3.6 3.6 0 000 5 3.3 3.3 0 004.8 0l8.2-8.5a3.6 3.6 0 000-5z"/></svg>
+    </button>
+    <button class="slider__button slider__button--right">
+      <svg class="slider__button-svg" xmlns="http://www.w3.org/2000/svg" width="60" height="60"><path stroke="currentColor" stroke-width="2" fill="none" d="M49 59H11A10 10 0 011 49V11A10 10 0 0111 1h38a10 10 0 0110 10v38a10 10 0 01-10 10zM36 27.5L27.8 19a3.3 3.3 0 00-4.8 0 3.6 3.6 0 000 5l5.9 6-5.9 6a3.6 3.6 0 000 5 3.3 3.3 0 004.8 0l8.2-8.5a3.6 3.6 0 000-5z"/></svg>
+    </button>
+    <a class="slider__scroll" href="#start">
+      <svg  xmlns="http://www.w3.org/2000/svg" height='77' width='66'>
+      <defs>
+        <linearGradient id='scroll-grad' gradientTransform="rotate(90)">
+          <stop offset='0%' stop-color='#fcff19'/>
+          <stop offset='43%' stop-color='#fcff19'/>
+          <stop offset='43%' stop-color='#515050'/>
+          <stop offset='100%' stop-color='#515050'/>
+        </linearGradient>
+      </defs>
+      <path id="scroll-path" fill-rule="evenodd" fill="currentColor" d="M55.8 43.5v-2.4a8.2 8.2 0 10-1 0v2.4c-4-.2-7.4-2.5-9.1-6A24.7 24.7 0 1149.3 24a10.7 10.7 0 116.5 19.6zM24.7 2.7a22 22 0 1020 31 10.7 10.7 0 010-3L27 27h-.4c-.5.4-1 .7-1.8.7a2.7 2.7 0 01-1.2-5.2c-.3-.1-.5-.2-.1-.2l.1.2v-.2h.3l.2-.5.2.1L32 4a22 22 0 00-7.2-1.3zm10 2.4L26.8 23l.4.5.2.3h.5v.2l17.7 4.1 1-1.4A21.8 21.8 0 0034.5 5zm21 38.4V49h-1v-5.5h1.1zm-1-2.4v-6.9l.6.2c.2 0 .3 0 .5-.2v7h-1zm-.6-8a1.2 1.2 0 012.4 0c0 .5-.3 1-.7 1.1v-.9h-1v1c-.4-.3-.7-.7-.7-1.1zM60.2 50h-5.4v-.3h1V49h4.4v1zm-25.7 9c-.8 0-1.5-.7-1.5-1.5v-5a1.5 1.5 0 013 0v5c0 .8-.7 1.5-1.5 1.5zm1.5 7.5a1.5 1.5 0 01-3 0v-4a1.5 1.5 0 113 0v4zm-4.8 2l3.3 3.6 3.3-3.5c.7-.8 2-.8 2.6 0 .8.8.8 2 0 2.8l-4.6 5c-.7.8-1.9.8-2.6 0l-4.7-5c-.7-.8-.7-2 0-2.8.8-.8 2-.8 2.7 0z"/></svg>
+    </a>
+    <div class="slider__nav">
+      <div class="slider__stick"></div>
+      <div class="slider__stick slider__stick--current"></div>
+      <div class="slider__stick"></div>
+      <div class="slider__stick"></div>
+    </div>
+  </div>
+  <img src="assets/img/header-logo.png" alt="The Bike Shop" class="header__logo">
+</header>
+<main id="start" class="main">
+  <section class="categories">
+    <h2 class="categories__title">CATEGORIES</h2>
+      <div class="categories__wrapper">
+        <div class="category category--fixed">
+          <h3 class="category__title">FIXED / SINGLE SPEED</h3>
+          <p class="category__text">Are You ready for the 27.5 Revolution?</p>
+          <a href="#" class="category__link-button">GO TO STORE</a>
+        </div>
+        <div class="category category--premium">
+          <h3 class="category__title">PREMIUM SERIES</h3>
+          <p class="category__text">Exclusive  Bike Components</p>
+          <a href="#" class="category__link-button">GO TO STORE</a>
+        </div>
+        <div class="category category--city">
+          <h3 class="category__title">CITY BIKES</h3>
+          <p class="category__text">Street Playground</p>
+          <a href="#" class="category__link-button">GO TO STORE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gallery">
+
+  </section>
+  <section class="contact-us">
+
+  </section>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
