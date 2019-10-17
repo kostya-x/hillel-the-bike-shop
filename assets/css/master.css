@@ -17,9 +17,9 @@
 .slider__title {
   font-family: "Roboto", sans-serif;
   font-size: 50px;
-  line-height: 32.5px;
   font-weight: 700;
   color: #ffffff;
+  line-height: 32.5px;
   letter-spacing: 0.25px;
   margin-top: 0;
   margin-bottom: 25px;
@@ -35,9 +35,9 @@
 .slider__text {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
-  line-height: 32.5px;
   font-weight: 100;
   color: #ffffff;
+  line-height: 32.5px;
   letter-spacing: 0.25px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -77,10 +77,11 @@
 .slider__link-button {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  line-height: normal;
   font-weight: 700;
   color: #fcff19;
+  line-height: 32.5px;
   letter-spacing: 0.25px;
+  line-height: normal;
   display: inline-block;
   padding: 15px 30px;
   text-decoration: none;
@@ -152,13 +153,13 @@
 .categories__title {
   font-family: "Roboto", sans-serif;
   font-size: 28px;
-  line-height: 32.5px;
   font-weight: 700;
   color: #000000;
+  line-height: 32.5px;
   letter-spacing: 0.25px;
   margin-top: 0;
   margin-bottom: 60px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .categories__wrapper {
@@ -199,20 +200,21 @@
 .category__title {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  line-height: 32.5px;
   font-weight: 700;
   color: #fcff19;
+  line-height: 32.5px;
   letter-spacing: 0.25px;
   margin-top: 0;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .category__text {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 32.5px;
   font-weight: 300;
   color: #ffffff;
+  line-height: 32.5px;
   letter-spacing: 0.25px;
   margin-top: 0;
   margin-bottom: 0;
@@ -221,9 +223,9 @@
 .category__link-button {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  line-height: 32.5px;
   font-weight: 700;
   color: #ffffff;
+  line-height: 32.5px;
   letter-spacing: 0.25px;
   display: none;
   position: absolute;
@@ -232,6 +234,7 @@
   border: 3px solid #ffffff;
   border-radius: 8px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .category::before {
@@ -249,4 +252,140 @@
 
 .category:hover .category__link-button {
   display: block;
+}
+
+.gallery {
+  padding-top: 70px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.gallery__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 32.5px;
+  letter-spacing: 0.25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.item {
+  margin: 15px;
+  padding-top: 40px;
+}
+
+.item__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.item__text-wrapper {
+  text-align: left;
+}
+
+.item__image {
+  width: 100%;
+}
+
+.item__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 32.5px;
+  letter-spacing: 0.25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.item__price {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 32.5px;
+  letter-spacing: 0.25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.item__option {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 32.5px;
+  letter-spacing: 0.25px;
+  position: relative;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 35px;
+  padding-right: 80px;
+  display: inline-block;
+  border: 1px solid #8f8f8f;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.item__option::after {
+  content: url(../img/button-arrow.png);
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+
+.item__buy {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 32.5px;
+  letter-spacing: 0.25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  background-color: #b7b7b7;
+  cursor: pointer;
+}
+
+.item__buy:hover {
+  color: #fcff19;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 1276px) {
+  .item__button-wrapper {
+    display: inline-block;
+    text-align: right;
+  }
+
+  .item__option {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .item__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
