@@ -42,7 +42,7 @@
       <div class="slider__stick"></div>
     </div>
   </div>
-  <img src="assets/img/header-logo.png" alt="The Bike Shop" class="header__logo">
+  <a href="#"><img src="assets/img/header-logo.png" alt="The Bike Shop" class="header__logo"></a>
 </header>
 <main id="start" class="main">
   <section class="categories">
@@ -110,12 +110,30 @@
       </div>
     </div>
   </section>
-  <section class="contact-us">
-
-  </section>
 </main>
-<footer>
-
+<footer class="footer">
+  <section class="contact-us">
+    <h2 class="contact-us__title">CONTACT US</h2>
+    <form class="contact-us__form" method="post" action="https://mcslayer.com/hillel/post.php" target="_blank">
+      <p class="contact-us__form-title">Please contact us for all inquiries and purchase options.</p>
+      <div class="contact-us__user-name">
+        <input class="contact-us__text contact-us__text--name" type="text" name="name" placeholder="NAME" required>
+        <input class="contact-us__text contact-us__text--surename" type="text" name="surename" placeholder="SURNAME" required>
+      </div>
+      <input class="contact-us__text contact-us__text--email" type="email" name="email" placeholder="USER@DOMAIN.COM" required>
+      <textarea class="contact-us__text contact-us__text--message" name="message" rows="8" cols="80" placeholder="MESSAGE" required></textarea>
+      <button class="contact-us__button" type="submit" name="button">SEND</button>
+    </form>
+  </section>
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item"><a href="#" class="navigation__link">BICYCLES</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link">PARTS</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link">ACCESSORIES</a></li>
+      <li class="navigation__item"><a href="#" class="navigation__link">EXTRAS</a></li>
+    </ul>
+    <a href="#"><img class="navigation__logo" src="assets/img/footer-logo.png" alt="The Bike Shop"></a>
+  </nav>
 </footer>
 </body>
 </html>
